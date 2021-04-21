@@ -9,6 +9,7 @@ class BlueBox extends Box{
         super.display(); 
       }
       else{
+      
         World.remove(world, this.body);
         push();
         this.Visiblity = this.Visiblity - 5;
@@ -17,4 +18,6 @@ class BlueBox extends Box{
         pop();
       }
     }
+
+
 }

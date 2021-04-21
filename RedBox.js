@@ -9,7 +9,9 @@ class RedBox extends Box{
         super.display();
       }
       else{
+        
         World.remove(world, this.body);
+        
         push();
         this.Visiblity = this.Visiblity - 5;
         tint(255,this.Visiblity);
@@ -17,4 +19,6 @@ class RedBox extends Box{
         pop();
       }
     }
+
+   
 }
